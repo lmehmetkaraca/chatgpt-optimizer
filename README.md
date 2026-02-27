@@ -2,36 +2,66 @@
 
 ![ChatGPT Optimizer Logo](./optimize.png)
 
-ChatGPT Optimizer, ChatGPT web arayüzünde uzun sohbetlerde oluşan hantallığı azaltmak için konuşma yanıtını render öncesi optimize eder.
+## English
 
-Geliştirici: lmehmetkaraca.
+ChatGPT Optimizer is a Chrome MV3 extension that keeps ChatGPT responsive in long conversations by trimming heavy chat history before render.
 
-## Ne yapar
+### What It Does
 
-- `https://chatgpt.com/*` ve `https://chat.openai.com/*` üzerinde çalışır.
-- Varsayılan olarak otomatik optimizasyon açıktır.
-- Sohbet verisini sayfa çizilmeden önce kırpar.
-- Kısa sohbetlerde hızlı devreye girer, uzun sohbetlerde etkiyi korur.
-- Popup üzerinden limit, anında optimize etme, daha eskileri gösterme ve hot reload kontrolü sağlar.
-- TR/EN arayüzünü otomatik seçer.
+- Works only on `https://chatgpt.com/*` and `https://chat.openai.com/*`
+- Keeps only the latest messages active to reduce UI lag
+- Auto optimize is enabled by default
+- Provides quick actions: `Optimize now`, `Load older`, `Hot Reload`
+- Supports Turkish and English UI
+- If browser language is not Turkish or English, UI defaults to English
 
-## Ne yapmaz
+### What It Does Not Do
 
-- Sunucu tarafı gecikmeleri çözmez.
-- ChatGPT dışı sekmelerde optimizasyon çalıştırmaz.
+- It does not speed up OpenAI servers
+- It does not collect or send personal data
+- It does not perform external analytics or telemetry calls
 
-## Gizlilik
+### Privacy
 
-- Veri toplamaz.
-- Dış ağa istek göndermez.
-- Tamamen istemci tarafında çalışır.
+- Fully local operation in browser
+- No data collection
+- No telemetry
 
-## Kurulum
+### Installation
 
-1. Chrome'da `chrome://extensions` açın.
-2. `Developer mode` açın.
-3. `Load unpacked` ile bu klasörü seçin.
+1. Open `chrome://extensions`
+2. Enable `Developer mode`
+3. Click `Load unpacked`
+4. Select this project folder
 
-## English Documentation
+## Turkce
 
-- [English README](./readme/README_EN.md)
+ChatGPT Optimizer, ChatGPT web arayuzunde uzun sohbetlerde olusan hantalligi azaltmak icin konusma gecmisini render oncesi optimize eder.
+
+### Ne Yapar
+
+- Sadece `https://chatgpt.com/*` ve `https://chat.openai.com/*` alanlarinda calisir
+- Arayuz yavaslamasini azaltmak icin son mesajlari aktif tutar
+- Otomatik optimize varsayilan olarak aciktir
+- Hizli islemler sunar: `Simdi optimize et`, `Daha eskileri goster`, `Hot Reload`
+- Turkce ve Ingilizce arayuzu destekler
+- Tarayici dili Turkce veya Ingilizce degilse varsayilan olarak Ingilizce kullanir
+
+### Ne Yapmaz
+
+- OpenAI sunucu gecikmelerini hizlandirmaz
+- Kisisel veri toplamaz ve gondermez
+- Dis analitik veya telemetri cagrisi yapmaz
+
+### Gizlilik
+
+- Tamamen tarayici icinde, yerel calisir
+- Veri toplama yok
+- Telemetri yok
+
+### Kurulum
+
+1. Chrome'da `chrome://extensions` sayfasini acin
+2. `Developer mode` secenegini acin
+3. `Load unpacked` butonuna basin
+4. Bu proje klasorunu secin
