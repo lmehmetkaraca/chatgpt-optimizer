@@ -1,7 +1,5 @@
 # ChatGPT Optimizer
 
-![ChatGPT Optimizer Logo](./optimize.png)
-
 ## English
 
 ChatGPT Optimizer is a Chrome MV3 extension that keeps ChatGPT responsive in long conversations by trimming heavy chat history before render.
